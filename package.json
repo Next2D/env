@@ -1,0 +1,22 @@
+{
+  "name": "@next2d/env",
+  "description": "Next2D Framework env function.",
+  "version": "1.0.0",
+  "author": "Toshiyuki Ienaga <ienaga@tvon.jp>",
+  "license": "MIT",
+  "main": "index.js",
+  "homepage": "https://next2d.app",
+  "bugs": "https://github.com/Next2D/env/issues",
+  "keywords": [
+    "Next2D",
+    "Next2D Framework",
+    "env"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Next2D/env.git"
+  },
+  "dependencies": {
+    "@types/node": "^16.9.2"
+  }
+}
