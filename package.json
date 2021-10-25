@@ -1,7 +1,7 @@
 {
   "name": "@next2d/env",
   "description": "Next2D Framework env function.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Toshiyuki Ienaga <ienaga@tvon.jp>",
   "license": "MIT",
   "main": "index.js",
@@ -12,11 +12,18 @@
     "Next2D Framework",
     "env"
   ],
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "npx jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Next2D/env.git"
   },
   "dependencies": {
     "@types/node": "^16.9.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.1.0"
   }
 }

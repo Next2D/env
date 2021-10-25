@@ -1,4 +1,7 @@
+.github
+__tests__
+node_modules
+.eslintignore
+.eslintrc.json
 .gitattributes
 .gitignore
-.github
-node_modules
