@@ -2,16 +2,29 @@
 
 module.exports = () =>
 {
-    const args = process.argv.slice(2);
+    const object = {
+        "environment": "local",
+        "platform": "web"
+    };
+
+    const args = process.argv;
     for (let idx = 0; args.length > idx; ++idx) {
 
-        const value = args[idx];
-        if (value.indexOf("env") === -1) {
-            continue;
-        }
+        switch (process.argv[idx]) {
 
-        return value.split("=")[1] || "local";
+            case "--env":
+                object.environment = process.argv[++idx];
+                break;
+
+            case "--platform":
+                object.platform = process.argv[++idx].toLowerCase();
+                break;
+
+            default:
+                break;
+
+        }
     }
 
-    return "local";
+    return object;
 };
