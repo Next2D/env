@@ -77,7 +77,7 @@ describe("success", () =>
         process.argv[5] = "Android";
 
         const object = env();
-        expect(object.environment).toBe("local");
-        expect(object.platform).toBe("web");
+        expect(object.environment).toBe("prod");
+        expect(object.platform).toBe("android");
     });
 });
