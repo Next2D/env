@@ -13,10 +13,12 @@ module.exports = () =>
         switch (process.argv[idx]) {
 
             case "--env":
+            case "env":
                 object.environment = process.argv[++idx];
                 break;
 
             case "--platform":
+            case "platform":
                 object.platform = process.argv[++idx].toLowerCase();
                 break;
 
