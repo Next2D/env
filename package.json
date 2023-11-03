@@ -1,10 +1,11 @@
 {
   "name": "@next2d/env",
   "description": "Next2D Framework env function.",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "author": "Toshiyuki Ienaga <ienaga@tvon.jp>",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "homepage": "https://next2d.app",
   "bugs": "https://github.com/Next2D/env/issues",
   "keywords": [
@@ -13,17 +14,23 @@
     "env"
   ],
   "scripts": {
-    "lint": "eslint index.js",
-    "test": "npx jest"
+    "lint": "eslint ./src/**/*.ts",
+    "publish": "tsc",
+    "test": "npx vitest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Next2D/env.git"
   },
   "dependencies": {
-    "@types/node": "^16.9.2"
+    "@types/node": "^20.8.10"
   },
   "devDependencies": {
-    "eslint": "^8.1.0"
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.52.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vitest": "^0.34.6"
   }
 }

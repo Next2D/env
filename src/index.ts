@@ -1,14 +1,14 @@
-"use strict";
+import { ObjectImpl } from "./interface/ObjectImpl";
 
-module.exports = () =>
+export default function env (): ObjectImpl
 {
-    const object = {
+    const object: ObjectImpl = {
         "environment": "local",
         "platform": "web"
     };
 
-    const args = process.argv;
-    for (let idx = 0; args.length > idx; ++idx) {
+    const args: string[] = process.argv;
+    for (let idx: number = 0; args.length > idx; ++idx) {
 
         switch (process.argv[idx]) {
 
@@ -29,4 +29,4 @@ module.exports = () =>
     }
 
     return object;
-};
+}
