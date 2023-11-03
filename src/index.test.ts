@@ -1,4 +1,4 @@
-const env = require("../index");
+import env from "./index";
 
 describe("success", () =>
 {
