@@ -1,11 +1,12 @@
 {
   "name": "@next2d/env",
   "description": "Next2D Framework env function.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Toshiyuki Ienaga <ienaga@tvon.jp>",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "homepage": "https://next2d.app",
   "bugs": "https://github.com/Next2D/env/issues",
   "keywords": [
@@ -18,6 +19,9 @@
     "publish": "tsc",
     "test": "npx vitest"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Next2D/env.git"
