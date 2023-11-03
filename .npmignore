@@ -1,7 +1,9 @@
 .github
-__tests__
 node_modules
+src
 .eslintignore
 .eslintrc.json
 .gitattributes
 .gitignore
+tsconfig.json
+vite.config.ts
