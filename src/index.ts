@@ -1,6 +1,6 @@
 import { ObjectImpl } from "./interface/ObjectImpl";
 
-module.exports = (): ObjectImpl =>
+export default function env (): ObjectImpl
 {
     const object: ObjectImpl = {
         "environment": "local",
@@ -29,4 +29,4 @@ module.exports = (): ObjectImpl =>
     }
 
     return object;
-};
+}
