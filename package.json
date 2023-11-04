@@ -2,7 +2,7 @@
   "name": "@next2d/env",
   "description": "Next2D Framework env function.",
   "version": "2.0.2",
-  "author": "Toshiyuki Ienaga <ienaga@tvon.jp>",
+  "author": "Toshiyuki Ienaga <ienaga@next2d.app>",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
